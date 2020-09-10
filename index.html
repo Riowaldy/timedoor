@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title>Timedoor Pizza</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
                     <div class="img-text">
                         <h3>Pizza</h3>
                         <h4>$8</h4>
-                        <input type="radio" name="img" id="img1">
+                        <input type="radio" name="img" id="img1" value="8" onclick="imgFunc()">
                     </div>
                 </div>
                 <div class="img2">
@@ -25,7 +25,7 @@
                     <div class="img-text">
                         <h3>Pizza</h3>
                         <h4>$10</h4>
-                        <input type="radio" name="img" id="img2">
+                        <input type="radio" name="img" id="img2" value="10" onclick="imgFunc()">
                     </div>
                 </div>
                 <div class="img3">
@@ -33,20 +33,20 @@
                     <div class="img-text">
                         <h3>Pizza</h3>
                         <h4>$12</h4>
-                        <input type="radio" name="img" id="img3">
+                        <input type="radio" name="img" id="img3" value="12" onclick="imgFunc()">
                     </div>
                 </div>
             </div>
             <h3>Size</h3>
             <div class="content">
                 <div class="size1">
-                    <label><input type="radio" name="size" id="size1">Small</label>
+                    <label><input type="radio" name="size" id="size1" value="-1" onclick="sizeFunc()">Small</label>
                 </div>
                 <div class="size2">
-                    <label><input type="radio" name="size" id="size12">Medium</label>
+                    <label><input type="radio" name="size" id="size2" value="0" onclick="sizeFunc()">Medium</label>
                 </div>
                 <div class="size3">
-                    <label><input type="radio" name="size" id="size3">Large</label>
+                    <label><input type="radio" name="size" id="size3" value="2" onclick="sizeFunc()">Large</label>
                 </div>
             </div>
             <h3>Toppings</h3>
@@ -90,9 +90,11 @@
             </div>
             <h3>Prize</h3>
             <div class="price">
-                <h3>$8</h3>
+                <h3 id="price">$0</h3>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
