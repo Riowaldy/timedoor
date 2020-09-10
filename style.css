@@ -1,0 +1,69 @@
+.container{
+    margin: 50px 20%;
+}
+.content{
+    width: 100%;
+}
+.body h3{
+    font-family: arial;
+    font-size: 30px;
+}
+.img1,.img2,.img3{
+    border: 1px solid black;
+    width: 30%;
+    float: left;
+}
+.img1,.img2{
+    margin-right: 4.5%;
+}
+.img1 img, .img2 img, .img3 img{
+    width: 90%;
+    margin: 5% 5%;
+}
+.img-text{
+    text-align: center;
+    width: 90%;
+    margin: auto 5%;
+}
+.img-text h3{
+    text-align: center;
+    margin: 0 0;
+    font-size: 20px;
+}
+.img-text h4{
+    text-align: left;
+    margin: 0 0;
+    font-size: 20px;
+}
+.size1,.size2,.size3{
+    text-align: center;
+    width: 30%;
+    float: left;
+}
+.size1,.size2{
+    margin-right: 5%;
+}
+.size1 input[type=radio], .size2 input[type=radio], .size3 input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+.size1 label, .size2 label, .size3 label {
+    font-size: 20px;
+    display: inline-block;
+}
+.toppings1,.toppings2,.toppings3{
+    text-align: left;
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+}
+.toppings1,.toppings2{
+    margin-right: 5%;
+}
+.toppings1 label, .toppings2 label, .toppings3 label{
+    font-size: 20px;
+}
+.price h3{
+    font-size: 20px;
+    color: red;
+}
