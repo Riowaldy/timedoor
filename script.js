@@ -1,5 +1,6 @@
 document.getElementById('size2').checked = true;
 function imgFunc() {
+    disableToppings()
     var dataView = (document.getElementById("price").innerHTML).substring(1);
     dataView = parseInt(dataView);
     var resSize = 0;
@@ -50,4 +51,50 @@ function sizeFunc() {
         }
     }
     return sizeTemp;
+}
+
+function disableToppings(){
+    if(document.getElementById('img1').checked){
+        document.getElementById("lobster").disabled = true;
+        document.getElementById("oyster").disabled = true;
+        document.getElementById("salmon").disabled = true;
+        document.getElementById("bacon").disabled = true;
+        document.getElementById("duck").disabled = true;
+        document.getElementById("sausage").disabled = true;
+        
+        document.getElementById("avocado").disabled = false;
+        document.getElementById("broccoli").disabled = false;
+        document.getElementById("onions").disabled = false;
+        document.getElementById("zucchini").disabled = false;
+        document.getElementById("tuna").disabled = false;
+        document.getElementById("ham").disabled = false;
+    }else if(document.getElementById('img2').checked){
+        document.getElementById("avocado").disabled = true;
+        document.getElementById("tuna").disabled = true;
+        document.getElementById("duck").disabled = true;
+        document.getElementById("sausage").disabled = true;
+
+        document.getElementById("broccoli").disabled = false;
+        document.getElementById("onions").disabled = false;
+        document.getElementById("zucchini").disabled = false;
+        document.getElementById("lobster").disabled = false;
+        document.getElementById("oyster").disabled = false;
+        document.getElementById("salmon").disabled = false;
+        document.getElementById("bacon").disabled = false;
+        document.getElementById("ham").disabled = false;
+    }else if(document.getElementById('img3').checked){
+        document.getElementById("avocado").disabled = true;
+        document.getElementById("lobster").disabled = true;
+        document.getElementById("oyster").disabled = true;
+        document.getElementById("salmon").disabled = true;
+
+        document.getElementById("broccoli").disabled = false;
+        document.getElementById("onions").disabled = false;
+        document.getElementById("zucchini").disabled = false;
+        document.getElementById("tuna").disabled = false;
+        document.getElementById("bacon").disabled = false;
+        document.getElementById("duck").disabled = false;
+        document.getElementById("ham").disabled = false;
+        document.getElementById("sausage").disabled = false;
+    }
 }
